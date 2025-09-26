@@ -36,9 +36,12 @@ def process_grades(students):
 
 if __name__ == "__main__":
     students = [
-    {'name': 'Ana', 'grades': [90, 100]},  #Entra la sentencia if average > 70
-    {'name': 'David', 'grades': None}      #Entra la sentencia if grades == None
-]                                          #Entra la sentencia if counter > 0 por tener mas de 0 estudiantes
+    {'name': 'Ana', 'grades': [90, 100]},  
+    {'name': 'Beto', 'grades': [60, 60]},  
+    {'name': 'Carla', 'grades': [40, 30]},  
+    {'name': 'David', 'grades': None}      
+]
+                                   
 
     result = process_grades(students)
     print("\nFinal processing result:")
