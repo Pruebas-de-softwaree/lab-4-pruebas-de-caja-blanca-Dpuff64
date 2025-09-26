@@ -15,7 +15,7 @@ def process_grades(students):
         
         average = sum(grades) / len(grades)
         total_grades += average
-        # counter += 1
+        counter += 1
 
         if average > 70:  
             passed.append(name)
@@ -36,11 +36,11 @@ def process_grades(students):
 
 if __name__ == "__main__":
     students = [
-        {'name': 'Ana', 'grades': [80, 90, 85]},
-        {'name': 'Luis', 'grades': [70, 70, 70]},
-        {'name': 'Jorge', 'grades': []},
-        {'name': 'Marta', 'grades': [40, 45, 50]}
-    ]
+    {'name': 'Ana', 'grades': [90, 100]},  # Para cubrir el if (passed)
+    {'name': 'Beto', 'grades': [60, 60]},   # Para cubrir el elif (recovery)
+    {'name': 'Carla', 'grades': [40, 30]},  # Para cubrir el else (failed)
+    {'name': 'David', 'grades': None}      # Para cubrir el if de grades==None
+]                                          # Se cubre el if de counter por tener al menos un alumno
 
     result = process_grades(students)
     print("\nFinal processing result:")
