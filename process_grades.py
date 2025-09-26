@@ -35,12 +35,7 @@ def process_grades(students):
 
 
 if __name__ == "__main__":
-    students = [
-    {'name': 'Ana', 'grades': [90, 100]},  
-    {'name': 'Beto', 'grades': [60, 60]},  
-    {'name': 'Carla', 'grades': [40, 30]},  
-    {'name': 'David', 'grades': None}      
-]
+    students = []
                                    
 
     result = process_grades(students)
