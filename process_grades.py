@@ -36,11 +36,9 @@ def process_grades(students):
 
 if __name__ == "__main__":
     students = [
-    {'name': 'Ana', 'grades': [90, 100]},  # Para cubrir el if (passed)
-    {'name': 'Beto', 'grades': [60, 60]},   # Para cubrir el elif (recovery)
-    {'name': 'Carla', 'grades': [40, 30]},  # Para cubrir el else (failed)
-    {'name': 'David', 'grades': None}      # Para cubrir el if de grades==None
-]                                          # Se cubre el if de counter por tener al menos un alumno
+    {'name': 'Ana', 'grades': [90, 100]},  #Entra la sentencia if average > 70
+    {'name': 'David', 'grades': None}      #Entra la sentencia if grades == None
+]                                          #Entra la sentencia if counter > 0 por tener mas de 0 estudiantes
 
     result = process_grades(students)
     print("\nFinal processing result:")
